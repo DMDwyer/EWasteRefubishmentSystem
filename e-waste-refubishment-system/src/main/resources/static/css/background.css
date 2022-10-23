@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+html{
+	background-image: url("background.jpg");
+}
+
+body {
+ font-family: Arial, sans-serif;
+ font-size: 100%;
+ width: 900px;
+ height: 1000px;
+ margin: 1em auto;
+ background-color: white;
+ border: 5px solid black;
+ box-shadow: 3px 3px 4px 4px;	
+}
+
+.wrapper {
+    text-align: center;
+}
+
+ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+
+h1{
+	text-align: center;	
+}
+
+li h2 {
+	text-align: center;	
+}
+
+
+li p {
+	color: red;
+}

@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+div {
+	display: grid;
+	place-items:center;
+}
+
+nav a:link, nav a:visited {
+  background-color: grey;
+  color: black;
+  border: 3px solid #D3D3D3;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover, nav a:active {
+  background-color: white;
+  color: black;
+}

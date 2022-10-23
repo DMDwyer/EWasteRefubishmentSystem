@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Components</title>
+<link rel="stylesheet" th:href="@{/css/components.css}"/>
+</head>
+<body>
+
+	<header th:fragment="header">
+		<a th:href="@{/}"><img th:src="@{/images/placeholder.png}"/></a>
+	</header>
+	
+	<nav th:fragment="menu">
+		<a th:href="@{/pcs}">PCs</a>
+		<a th:href="@{/laptops}">Laptops</a>
+		<a th:href="@{/mobile_phone}">Mobile Phones</a>
+		<a th:href="@{/tablets}">Tablets</a>
+		<a th:href="@{/contact}">Contact Us</a>
+		<a th:href="@{/signUp}">Sign Up</a>
+	</nav>
+
+</body>
+</html>

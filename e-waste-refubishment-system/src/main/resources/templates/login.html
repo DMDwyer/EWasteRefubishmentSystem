@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeLeaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Login</title>
+	<link rel="stylesheet" th:href="@{/css/background.css}"/>
+	<link rel="stylesheet" th:href="@{/css/form.css}"/>
+</head>
+<body>
+
+	<div th:insert="fragments/components :: header"></div>
+	
+	<div th:insert="fragments/components :: menu"></div>
+	
+	<div>
+		
+		<h1>Login</h1>
+		
+		<form  action="#" th:action="@{/login}" th:object="${user}"  method="POST" >
+			<ul>
+				<li><label>Email: </label></li>
+				<li><input type="email" name="email" th:field="*{email}" placeholder="Enter email address"/></li>
+				<li><label>Password: </label></li>
+				<li><input type = "password" id="password" name="password" th:field="*{password}" placeholder="Enter your password"/></li>
+				<li><input type="submit" value="Submit"/></li>
+			</ul>
+		</form>
+	
+	</div>
+
+</body>
+</html>
